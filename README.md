@@ -7,17 +7,19 @@ The task: Considering E. coli's regulatory network (transcription factors versus
 - is the length of the longest cascade shorter or longer than expected at random?
 
 The code is written in R, mainly using base R (instead of the igraph library). Only the script files are included (no data or results). The files are the following:
-- Network.R: main script.
-- NetworkFunctions.R: Implementation of the algorithms for finding and classifying autoregulation motifs, finding and classifying feed forward loops, and finding the length of the longest path using base R. There are also other helper functions.
+- **Network.R**: main script.
+- **NetworkFunctions.R**: Implementation of the algorithms for finding and classifying autoregulation motifs, finding and classifying feed forward loops, and finding the length of the longest path using base R. There are also other helper functions.
     - Autoregulation motifs: distinguishing between positive and negative loops.
     - Feed forward loops: distinguishing between the four coherent and four incoherent loops.
-- NetworkFunctionsTest.R: Tests for the main functions of NetworkFunctions.R
-- ResultsPlotting.R: Generating result plots.
-- StatisticalAnalysis.R: Analyze the statistical significance of the results.
+- **NetworkFunctionsTest.R**: Tests for the main functions of NetworkFunctions.R
+- **ResultsPlotting.R**: Generating result plots.
+- **StatisticalAnalysis.R**: Analyze the statistical significance of the results.
+
+Further explanations can be found in methods_explanation.pdf and in the scripts themselves.
 
 Disclaimer: This is a very crude implementation of those algorithms, and there is a large room for improvement. Don't use this in any meaningful task without checking the igraph library first (which can do everything I do here in a more optimized fashion, and much more. Available here: https://igraph.org/r/)
 
-Data used: RegulonDB's Escherichia coli Regulatory Network interactions (TF-Gene), Release: 10.9 Date: 06/29/2021, downloaded on October 12, 2021.
+Data used: RegulonDB's Escherichia coli Regulatory Network interactions (TF-Gene), Release: 10.9 Date: 06/29/2021, downloaded on October 12, 2021. (https://regulondb.ccg.unam.mx/menu/download/datasets/index.jsp)
 
 
 References used on this project:
