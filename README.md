@@ -17,7 +17,7 @@ The code is written in R, mainly using base R (instead of the igraph library). O
 
 Further explanations can be found in methods_explanation.pdf and in the scripts themselves.
 
-Disclaimer: This is a very crude implementation of those algorithms, and there is a large room for improvement. Don't use this in any meaningful task without checking the igraph library first (which can do everything I do here in a more optimized fashion, and much more. Available here: https://igraph.org/r/)
+**DISCLAIMER**: This is a **very crude** implementation of those algorithms, and there is a large room for improvement. Don't use this in any meaningful task without checking the igraph library first (which can do everything I do here in a more optimized fashion, and much more. Available here: https://igraph.org/r/)
 
 Data used: RegulonDB's Escherichia coli Regulatory Network interactions (TF-Gene), Release: 10.9 Date: 06/29/2021, downloaded on October 12, 2021. (https://regulondb.ccg.unam.mx/menu/download/datasets/index.jsp)
 
